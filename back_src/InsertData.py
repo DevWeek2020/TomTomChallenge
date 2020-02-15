@@ -11,6 +11,7 @@ import json
 from pymongo import MongoClient
 from pymongo import errors as mongoerrors
 from pathlib import Path
+from hash import sha256_hash
 
 def get_db():
     """Get MongoDB username and password from config file and returns desired databse.
@@ -61,6 +62,21 @@ def insert_data(data):
     db = get_db()
     collection = db[collection]
     collection.insert_one(data)
+
+
+def get_data_from_users(name, email):
+    """
+    Args:
+        obj_id : the unique id of the user
+    Return:
+        the obj of the user(dict)
+    """
+    db = get_db()
+    sha = sha256_hash(name + email)
+    return db.Users.find({"uid" : sha})
+
+
+
 
 
 def main():
