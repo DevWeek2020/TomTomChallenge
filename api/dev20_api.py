@@ -86,5 +86,3 @@ def read_file_in_data(file_name, read_or_write):
 		with open(path, ''a) as f:
 			return f
 	return None
-
-def 
