@@ -11,7 +11,7 @@ class Business:
     
     def __dict__():
         """ returns the all class attributes in dictionary format """
-        returnDict = {'Local_uid' : local_uid, 'Name': name, 'PhoneNumber': phoneNumber, 'Address' : address, 'OpenTime' : openTime, 'Business Type' : businessType, 'Reviews' : reviews, 'Posts' : posts}
+        returnDict = {'Local_uid' : self.local_uid, 'Name': self.name, 'PhoneNumber': self.phoneNumber, 'Address' : self.address, 'OpenTime' : self.openTime, 'Business Type' : self.businessType, 'Reviews' : self.reviews, 'Posts' : self.posts}
         return returnDict
         
 	

@@ -11,5 +11,5 @@ class Customer:
     
     def __dict__():
         """ returns the all class attributes in dictionary format """
-        returnDict = {'Local_uid' : local_uid, 'Name': name, 'PhoneNumber': phoneNumber, 'Address' : address, 'Email' : email, 'Shopping Cart' : shoppingCart}
+        returnDict = {'Local_uid' : self.local_uid, 'Name': self.name, 'PhoneNumber': self.phoneNumber, 'Address' : self.address, 'Email' : self.email, 'Shopping Cart' : self.shoppingCart}
         return returnDict
