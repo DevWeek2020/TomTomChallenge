@@ -14,7 +14,7 @@ class Customer:
         returnDict = {'Local_uid' : self.local_uid, 'Name': self.name, 'PhoneNumber': self.phoneNumber, 'Address' : self.address, 'Email' : self.email, 'Shopping Cart' : self.shoppingCart}
         return returnDict
         
-    def setPassWord (password):
+    def setPassWord (self, password):
         """ sets the password for the user"""
         self.password = password
     

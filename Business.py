@@ -21,10 +21,5 @@ class Business:
                         'OpenTime' : self.openTime, 'Business Type' : self.businessType, 
                         'Reviews' : self.reviews, 'Posts' : self.posts}
         return returnDict
-        
-    def checkAvailability (self, singleItem):
-        for item in items:
-            if item is singleItem:
-                return true
-        return false
+
         
