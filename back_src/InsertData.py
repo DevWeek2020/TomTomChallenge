@@ -92,5 +92,5 @@ def main():
     json files and put them into desired databses.
     """
 
-    if __name__ == "__main__":
-main()
+if __name__ == "__main__":
+    main()
